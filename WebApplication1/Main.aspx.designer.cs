@@ -24,15 +24,6 @@ namespace WebApplication1
         protected global::System.Web.UI.HtmlControls.HtmlForm frmRegister;
 
         /// <summary>
-        /// lblName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblName;
-
-        /// <summary>
         /// txtName control.
         /// </summary>
         /// <remarks>
@@ -78,15 +69,6 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.RegularExpressionValidator validateRegExpEmail;
 
         /// <summary>
-        /// lblPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPassword;
-
-        /// <summary>
         /// txtPassword control.
         /// </summary>
         /// <remarks>
@@ -103,15 +85,6 @@ namespace WebApplication1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator validateRequiredPassword;
-
-        /// <summary>
-        /// lblPasswordRepeat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPasswordRepeat;
 
         /// <summary>
         /// txtPasswordRepeat control.
@@ -150,13 +123,13 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.TextBox txtBirthDay;
 
         /// <summary>
-        /// cldrBirthDay control.
+        /// txtCalendar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar cldrBirthDay;
+        protected global::System.Web.UI.WebControls.TextBox txtCalendar;
 
         /// <summary>
         /// validateRequiredBirthDay control.
@@ -184,15 +157,6 @@ namespace WebApplication1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox cbxRules;
-
-        /// <summary>
-        /// ValidationSummary control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary;
 
         /// <summary>
         /// btnRegister control.

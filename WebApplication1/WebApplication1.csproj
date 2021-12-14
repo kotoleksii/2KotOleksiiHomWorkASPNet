@@ -68,7 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="images\poster.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Main.aspx" />
+    <Content Include="style\main.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

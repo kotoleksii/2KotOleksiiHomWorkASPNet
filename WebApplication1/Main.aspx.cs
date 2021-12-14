@@ -21,13 +21,24 @@ namespace WebApplication1
 
         protected void validateMin3CheckedTechList_ServerValidate(object source, ServerValidateEventArgs args)
         {
-            if (!cbxRules.Checked && !ValidationSummary.Page.IsValid)
-                args.IsValid = false;
+            //if (!cbxRules.Checked && !ValidationSummary.Page.IsValid)
+            //    args.IsValid = false;
         }
 
-        protected void cldrBirthDay_SelectionChanged(object sender, EventArgs e)
+        protected void validateBtnRegister_ServerValidate(object source, ServerValidateEventArgs args)
         {
-            string birthDate = cldrBirthDay.SelectedDate.ToShortDateString();
+            
+        }
+
+        protected void cbxRules_CheckedChanged(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        protected void txtCalendar_TextChanged(object sender, EventArgs e)
+        {
+            string birthDate = txtCalendar.Text;
 
             DateTime birthDateTime = DateTime.Parse(birthDate);
             DateTime today = DateTime.Today;
@@ -38,16 +49,6 @@ namespace WebApplication1
                 age--;
 
             txtBirthDay.Text = age.ToString();
-        }
-
-        protected void validateBtnRegister_ServerValidate(object source, ServerValidateEventArgs args)
-        {
-            
-        }
-
-        protected void cbxRules_CheckedChanged(object sender, EventArgs e)
-        {
-           
         }
     }
 }
