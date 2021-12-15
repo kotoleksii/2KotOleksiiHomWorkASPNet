@@ -12,28 +12,12 @@ namespace WebApplication1
         protected void Page_Load(object sender, EventArgs e)
         {
             txtBirthDay.Style.Add("display", "none");
-        }
-
-        protected void btnRegister_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void validateMin3CheckedTechList_ServerValidate(object source, ServerValidateEventArgs args)
-        {
-            //if (!cbxRules.Checked && !ValidationSummary.Page.IsValid)
-            //    args.IsValid = false;
+            //ValidationSummary.Style.Add("display", "none");
         }
 
         protected void validateBtnRegister_ServerValidate(object source, ServerValidateEventArgs args)
         {
-            
-        }
-
-        protected void cbxRules_CheckedChanged(object sender, EventArgs e)
-        {
-
-            
+            args.IsValid = cbxRules.Checked;
         }
 
         protected void txtCalendar_TextChanged(object sender, EventArgs e)
@@ -49,6 +33,12 @@ namespace WebApplication1
                 age--;
 
             txtBirthDay.Text = age.ToString();
+        }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+            if(Page.IsValid)
+                Response.Redirect("https://send.monobank.ua/jar/2scqqAKmid");
         }
     }
 }
