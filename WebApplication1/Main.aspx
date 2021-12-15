@@ -65,7 +65,7 @@
                         <div class="mb-0">
                             <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" class="form-control input-sm"
                                 placeholder="Пароль"></asp:TextBox>
-               
+
                             <asp:RequiredFieldValidator 
                                 ID="validateRequiredPassword"
                                 runat="server" 
@@ -77,8 +77,8 @@
                         <!--Repeat Password -->
                         <div class="mb-0">                
                             <asp:TextBox ID="txtPasswordRepeat" TextMode="Password" runat="server" class="form-control input-sm"
-                                placeholder="Повторіть пароль"></asp:TextBox>
-               
+                                placeholder="Повторіть пароль"></asp:TextBox>  
+                            
                             <asp:RequiredFieldValidator 
                                 ID="validateRequiredPasswordRepeat"
                                 runat="server" 
@@ -86,6 +86,7 @@
                                 ControlToValidate="txtPasswordRepeat"
                                 EnableClientScript="False">
                             </asp:RequiredFieldValidator>
+
                             <asp:CompareValidator 
                                 ID="validateComparePassword"
                                 runat="server"
@@ -99,11 +100,12 @@
                         <!-- Birthday -->
                         <div class="mb-0">                            
                             <asp:TextBox ID="txtBirthDay" runat="server"></asp:TextBox>
+
                             <asp:TextBox runat="server" TextMode="Date"
                                 ID="txtCalendar" class="form-control input-sm" 
                                 OnTextChanged="txtCalendar_TextChanged">
                             </asp:TextBox>
-               
+                            
                             <asp:RequiredFieldValidator 
                                 ID="validateRequiredBirthDay"
                                 runat="server" 
@@ -126,6 +128,7 @@
                         <!-- CheckRules -->
                         <div class="mb-1">
                             <asp:CheckBox ID="cbxRules" runat="server" type="checkbox"/>
+
                             <label class="form-check-label" for="cbxRules">Згода з правилами </label>                      
                                 <!--TODO немає потреби??-->
                                 <%-- <div>
