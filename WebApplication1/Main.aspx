@@ -17,8 +17,8 @@
 <div class="container my-3 pb-4">
     <div class="row ">
         <div class="col-md-8 pt-3 d-flex justify-content-center text-center">
-            <div class="mb-2 ">
-                <img height="380" src="/images/poster.jpeg"  alt="Alternate Text" />
+            <div class="mb-2">
+                <img height="380" src="/images/poster.jpeg" alt="Alternate Text" />
             </div>
         </div>
     <div class="col-md-4 col-md-offset-1 pt-3">
@@ -29,7 +29,8 @@
                     <div class="form-group">
                         <!-- Name -->
                         <div class="mb-0 ">
-                            <asp:TextBox ID="txtName" runat="server" class="form-control input-sm" placeholder="Ім`я"></asp:TextBox>
+                            <asp:TextBox ID="txtName" runat="server" class="form-control input-sm"
+                                placeholder="Ім`я"></asp:TextBox>
                 
                             <asp:RequiredFieldValidator 
                                 ID="validateRequiredName"
@@ -41,7 +42,8 @@
                         </div>
                         <!-- Email -->
                         <div class="mb-0">
-                            <asp:TextBox ID="txtEmail" runat="server" class="form-control input-sm" placeholder="E-mail"></asp:TextBox>
+                            <asp:TextBox ID="txtEmail" runat="server" class="form-control input-sm" 
+                                placeholder="E-mail"></asp:TextBox>
                
                             <asp:RequiredFieldValidator 
                                 ID="validateRequiredEmail"
@@ -63,8 +65,8 @@
                         </div>
                         <!-- Password -->
                         <div class="mb-0">
-                            <asp:TextBox ID="txtPassword" TextMode="Password" runat="server" class="form-control input-sm"
-                                placeholder="Пароль"></asp:TextBox>
+                            <asp:TextBox ID="txtPassword" TextMode="Password" runat="server"
+                                class="form-control input-sm" placeholder="Пароль"></asp:TextBox>
 
                             <asp:RequiredFieldValidator 
                                 ID="validateRequiredPassword"
@@ -76,8 +78,8 @@
                             </div>
                         <!--Repeat Password -->
                         <div class="mb-0">                
-                            <asp:TextBox ID="txtPasswordRepeat" TextMode="Password" runat="server" class="form-control input-sm"
-                                placeholder="Повторіть пароль"></asp:TextBox>  
+                            <asp:TextBox ID="txtPasswordRepeat" TextMode="Password" runat="server"
+                                class="form-control input-sm" placeholder="Повторіть пароль"></asp:TextBox>  
                             
                             <asp:RequiredFieldValidator 
                                 ID="validateRequiredPasswordRepeat"
@@ -136,7 +138,8 @@
                                 </div>  --%>      
                             </div>
                         <div class="mb-0 text-center">
-                            <asp:Button ID="btnRegister" runat="server" Text="Зареєструватись" CssClass="btn btn-primary" OnClick="btnRegister_Click"/>
+                            <asp:Button ID="btnRegister" runat="server" Text="Зареєструватись"
+                                CssClass="btn btn-primary" OnClick="btnRegister_Click"/>
                         </div>
                         <div class="mb-0 text-center">
                             <asp:CustomValidator 
