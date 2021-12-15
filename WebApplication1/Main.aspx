@@ -123,7 +123,6 @@
                                 >
                             </asp:RangeValidator>                    
                         </div>
-
                         <!-- CheckRules -->
                         <div class="mb-1">
                             <asp:CheckBox ID="cbxRules" runat="server" type="checkbox"/>

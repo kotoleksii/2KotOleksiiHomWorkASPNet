@@ -15,11 +15,6 @@ namespace WebApplication1
             //ValidationSummary.Style.Add("display", "none");
         }
 
-        protected void validateBtnRegister_ServerValidate(object source, ServerValidateEventArgs args)
-        {
-            args.IsValid = cbxRules.Checked;
-        }
-
         protected void txtCalendar_TextChanged(object sender, EventArgs e)
         {
             string birthDate = txtCalendar.Text;
@@ -33,6 +28,11 @@ namespace WebApplication1
                 age--;
 
             txtBirthDay.Text = age.ToString();
+        }
+
+        protected void validateBtnRegister_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            args.IsValid = cbxRules.Checked;
         }
 
         protected void btnRegister_Click(object sender, EventArgs e)
